@@ -23,6 +23,9 @@ public class ModItems {
     public static final DeferredItem<SwordItem> PLACEHOLDERSTAFF = ITEMS.register("placeholder_staff",
             props -> new SwordItem(ToolMaterial.MAGIC_MATERIAL,new Item.Properties()
                     .attributes(SwordItem.createAttributes(ToolMaterial.MAGIC_MATERIAL,7,-3f))));
+    public static final DeferredItem<SwordItem> PLACEHOLDERSYTHE = ITEMS.register("placeholder_sythe",
+            props -> new SwordItem(ToolMaterial.MAGIC_MATERIAL,new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ToolMaterial.MAGIC_MATERIAL,7,-3f))));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

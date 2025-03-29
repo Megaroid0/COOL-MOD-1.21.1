@@ -70,6 +70,7 @@ public class MagicalWeaponry  {
             event.accept(ModItems.PLACEHOLDERSWORD);
             event.accept(ModItems.PLACEHOLDERHAMMER);
             event.accept(ModItems.PLACEHOLDERSTAFF);
+            event.accept(ModItems.PLACEHOLDERSYTHE);
         }
     }
 
