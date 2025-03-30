@@ -1,6 +1,9 @@
 package net.megaroid.MagicalWeaponry;
 
+import net.megaroid.MagicalWeaponry.entity.ModEntities;
+import net.megaroid.MagicalWeaponry.entity.client.MimicRenderer;
 import net.megaroid.MagicalWeaponry.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -53,6 +56,7 @@ public class MagicalWeaponry  {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -70,7 +74,9 @@ public class MagicalWeaponry  {
             event.accept(ModItems.PLACEHOLDERSWORD);
             event.accept(ModItems.PLACEHOLDERHAMMER);
             event.accept(ModItems.PLACEHOLDERSTAFF);
-            event.accept(ModItems.PLACEHOLDERSYTHE);
+            event.accept(ModItems.PLACEHOLDERSCYTHE);
+            event.accept(ModItems.MIMIC_SPAWN_EGG);
+
         }
     }
 
@@ -85,6 +91,7 @@ public class MagicalWeaponry  {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.MIMIC.get(), MimicRenderer::new);
 
         }
     }

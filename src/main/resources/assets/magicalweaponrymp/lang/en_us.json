@@ -3,5 +3,7 @@
   "item.magicalweaponrymp.placeholder_sword": "Placeholder Sword",
   "item.magicalweaponrymp.placeholder_hammer": "Placeholder Hammer",
   "item.magicalweaponrymp.placeholder_staff": "Placeholder Staff",
-  "item.magicalweaponrymp.placeholder_sythe": "Placeholder Sythe"
+  "item.magicalweaponrymp.placeholder_scythe": "Placeholder Scythe",
+  "item.magicalweaponrymp.mimic_spawn_egg": "mimic spawn egg",
+  "entity.mccourse.mimic": "Mimic"
 }
