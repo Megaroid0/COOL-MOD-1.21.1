@@ -17,8 +17,8 @@ public class ModEntities {
 
 
     public  static  final Supplier<EntityType<MimicEntity>> MIMIC =
-            ENTITY_TYPES.register("mimic",() -> EntityType.Builder.of(MimicEntity::new, MobCategory.CREATURE)
-                    .sized(1,1).build("mimic"));
+            ENTITY_TYPES.register("mimic",() -> EntityType.Builder.of(MimicEntity::new, MobCategory.MONSTER)
+                    .sized(1,1.3f).build("mimic"));
 
 
     public static void register(IEventBus eventBus){
